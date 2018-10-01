@@ -1,0 +1,39 @@
+Jednoduché príkazy
+	príkaz - povel na vykonanie èinnosti
+	vstup("read", "readln()"), vıstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
+
+Zloené príkazy
+	cykly(for, while, repeat)
+
+	for i:=1 ("to","downto") 7 do
+	begin
+		sth
+	end;
+
+	while "podmienka" do
+	begin
+		sth
+	end;
+
+	repeat
+		sth
+	until "podmienka";
+
+viacnásobné vetvenie(case)
+	case "hladanı objekt" of
+		1: príkaz;
+		2..10: príkaz;
+		11,15,26: begin
+				príkaz1;
+				príkaz2;
+			  end;
+	else príkaz; //nepovinné
+	end;
+
+shortstring - od 1 po 255 znakov,
+
+delete("reazec z ktorého","ktorá pozícia","ko¾ko miest")
+insert("vkladanı podreacez","reazec do ktorého sa vkladá","pozícia v tomto reazci")
+pos("h¾adanı reazec","v ktorom reazci h¾adá")
+copy("z ktorého reazca sa bude kopírova","od akej pozície v tomto reazci","ko¾ko miest od tejto pozície")
+
