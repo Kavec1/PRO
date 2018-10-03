@@ -9,15 +9,20 @@ uses
   Classes
   { you can add units after this };
 var
-  pole: array [1..5] of integer;
-  i,min,naj:integer;
+  pole: array [1..52] of real;
+  i,naj:integer;
+  min:real;
 begin
   min:=10000;
-  for i:=1 to 5 do
-  readln(pole[i]);
+  for i:=1 to 52 do
+  begin
+  pole[i]:=(random(101)+random);
+  write(pole[i]:1:2);
+  write(' ');
+  end;
 
   naj:=0;
-  for i:=1 to 5 do
+  for i:=1 to 52 do
   begin
     if pole[i]<min then
     min:=pole[i];
@@ -26,7 +31,7 @@ begin
     inc(naj);
   end;
   writeln;
-  writeln(min);
+  writeln(min:1:2);
   writeln(naj);
   writeln('end');
   readln;
