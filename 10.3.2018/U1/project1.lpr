@@ -16,14 +16,14 @@ begin
   randomize;
   readln(dlzka);
   SetLength(pole,dlzka);
-  for j:=0 to dlzka do
+  for j:=0 to dlzka-1 do
   pole[j]:=(random(500)-250);
 
-  for i:=0 to dlzka do
+  for i:=0 to dlzka-1 do
   begin
     if (i mod 2)=0 then
     begin
-       if pole[i]>0 then
+       if pole[i]<0 then
           TextColor(green)
        else
            TextColor(red);
@@ -33,11 +33,11 @@ begin
 
   writeln;
 
-  for i:=0 to dlzka do
+  for i:=0 to dlzka-1 do
   begin
     if (i mod 2)<>0 then
     begin
-       if pole[i]>0 then
+       if pole[i]<0 then
           TextColor(green)
        else
            TextColor(red);

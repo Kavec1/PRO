@@ -15,11 +15,11 @@ var
 begin
   randomize;
   readln(dlzka);
-  SetLength(pole,dlzka);
-  for j:=0 to dlzka do
+  SetLength(pole,dlzka-1);
+  for j:=0 to dlzka-1 do
   pole[j]:=(random(500)-250);
 
-  for i:=0 to dlzka do
+  for i:=0 to dlzka-1 do
   begin
     if (i mod 2)=0 then
     begin
@@ -33,7 +33,7 @@ begin
 
   writeln;
 
-  for i:=0 to dlzka do
+  for i:=0 to dlzka-1 do
   begin
     if (i mod 2)<>0 then
     begin

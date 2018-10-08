@@ -37,3 +37,6 @@ insert("vkladanı podreacez","reazec do ktorého sa vkladá","pozícia v tomto re
 pos("h¾adanı reazec","v ktorom reazci h¾adá")
 copy("z ktorého reazca sa bude kopírova","od akej pozície v tomto reazci","ko¾ko miest od tejto pozície")
 
+chr(64) vráti znak pre hodnotu 64(@)
+ord(A) vráti hodnotu pre znak A(65) 
+
