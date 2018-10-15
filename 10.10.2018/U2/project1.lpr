@@ -11,16 +11,21 @@ uses
   { you can add units after this };
 
 var
-  vstup,i,j,b,h:integer;
+  vstup,i,j,k,b,h,o:integer;
   bin:array of integer;
   hex:array of char;
+  oct:array of integer;
 begin
   readln(vstup);
   b:=round(log2(vstup));
   h:=round(logn(16,vstup));
+  o:=rond(logn(8,vstup));
   SetLength(bin,b+1);
   SetLength(hex,h+1);
+  SetLength(oct,h+1);
   j:=0;
+  i:=0;
+  k:=0;
   repeat
     bin[j]:=vstup mod 2;
     inc(j);
@@ -28,5 +33,6 @@ begin
   until vstup=0;
   for i:=b downto 0 do
   write(bin[i]);
+
   readln;
 end.            (*treba dokonciť*)
