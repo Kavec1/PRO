@@ -1,4 +1,4 @@
-Jednoduché príkazy
+	Jednoduché príkazy
 	príkaz - povel na vykonanie èinnosti
 	vstup("read", "readln()"), výstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
 
