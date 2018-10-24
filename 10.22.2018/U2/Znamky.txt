@@ -1,0 +1,165 @@
+Semion Mogilev ma priemer znamok z maturity: 1.8
+Al Capone ma priemer znamok z maturity: 2.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 2.8
+Pablo Escobar ma priemer znamok z maturity: 2.8
+John Gotti ma priemer znamok z maturity: 3.8
+Hisayuki Machii ma priemer znamok z maturity: 2.5
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.8
+Salvatore Riina ma priemer znamok z maturity: 2.8
+Dawood Ibrahim ma priemer znamok z maturity: 4.5
+Xie Caiping ma priemer znamok z maturity: 3.5
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.3
+Al Capone ma priemer znamok z maturity: 3.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.3
+Pablo Escobar ma priemer znamok z maturity: 1.5
+John Gotti ma priemer znamok z maturity: 2.5
+Hisayuki Machii ma priemer znamok z maturity: 3.0
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.3
+Salvatore Riina ma priemer znamok z maturity: 3.0
+Dawood Ibrahim ma priemer znamok z maturity: 3.0
+Xie Caiping ma priemer znamok z maturity: 2.8
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 1.5
+Al Capone ma priemer znamok z maturity: 3.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 2.3
+Pablo Escobar ma priemer znamok z maturity: 3.3
+John Gotti ma priemer znamok z maturity: 3.3
+Hisayuki Machii ma priemer znamok z maturity: 2.5
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 2.5
+Dawood Ibrahim ma priemer znamok z maturity: 2.5
+Xie Caiping ma priemer znamok z maturity: 4.3
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 2.5
+Al Capone ma priemer znamok z maturity: 1.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 2.3
+Pablo Escobar ma priemer znamok z maturity: 4.0
+John Gotti ma priemer znamok z maturity: 2.5
+Hisayuki Machii ma priemer znamok z maturity: 3.0
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 2.3
+Dawood Ibrahim ma priemer znamok z maturity: 3.3
+Xie Caiping ma priemer znamok z maturity: 2.5
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 2.8
+Al Capone ma priemer znamok z maturity: 2.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.5
+Pablo Escobar ma priemer znamok z maturity: 2.3
+John Gotti ma priemer znamok z maturity: 2.3
+Hisayuki Machii ma priemer znamok z maturity: 3.5
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.5
+Salvatore Riina ma priemer znamok z maturity: 3.8
+Dawood Ibrahim ma priemer znamok z maturity: 2.0
+Xie Caiping ma priemer znamok z maturity: 3.5
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.3
+Al Capone ma priemer znamok z maturity: 2.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.5
+Pablo Escobar ma priemer znamok z maturity: 2.5
+John Gotti ma priemer znamok z maturity: 2.5
+Hisayuki Machii ma priemer znamok z maturity: 4.3
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.8
+Salvatore Riina ma priemer znamok z maturity: 2.5
+Dawood Ibrahim ma priemer znamok z maturity: 3.3
+Xie Caiping ma priemer znamok z maturity: 3.0
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 2.8
+Al Capone ma priemer znamok z maturity: 2.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.0
+Pablo Escobar ma priemer znamok z maturity: 3.0
+John Gotti ma priemer znamok z maturity: 3.3
+Hisayuki Machii ma priemer znamok z maturity: 3.3
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 3.5
+Dawood Ibrahim ma priemer znamok z maturity: 4.0
+Xie Caiping ma priemer znamok z maturity: 2.3
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.3
+Al Capone ma priemer znamok z maturity: 2.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.3
+Pablo Escobar ma priemer znamok z maturity: 2.3
+John Gotti ma priemer znamok z maturity: 3.3
+Hisayuki Machii ma priemer znamok z maturity: 2.3
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.3
+Salvatore Riina ma priemer znamok z maturity: 3.5
+Dawood Ibrahim ma priemer znamok z maturity: 2.8
+Xie Caiping ma priemer znamok z maturity: 3.0
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.3
+Al Capone ma priemer znamok z maturity: 3.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 2.5
+Pablo Escobar ma priemer znamok z maturity: 3.8
+John Gotti ma priemer znamok z maturity: 3.3
+Hisayuki Machii ma priemer znamok z maturity: 3.0
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 4.3
+Dawood Ibrahim ma priemer znamok z maturity: 4.0
+Xie Caiping ma priemer znamok z maturity: 3.8
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.5
+Al Capone ma priemer znamok z maturity: 2.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 4.0
+Pablo Escobar ma priemer znamok z maturity: 3.5
+John Gotti ma priemer znamok z maturity: 1.8
+Hisayuki Machii ma priemer znamok z maturity: 4.3
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.0
+Salvatore Riina ma priemer znamok z maturity: 3.3
+Dawood Ibrahim ma priemer znamok z maturity: 2.3
+Xie Caiping ma priemer znamok z maturity: 3.8
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 2.5
+Al Capone ma priemer znamok z maturity: 3.0
+Charles "Lucky" Luciano ma priemer znamok z maturity: 2.0
+Pablo Escobar ma priemer znamok z maturity: 2.3
+John Gotti ma priemer znamok z maturity: 3.0
+Hisayuki Machii ma priemer znamok z maturity: 4.0
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 3.5
+Salvatore Riina ma priemer znamok z maturity: 3.5
+Dawood Ibrahim ma priemer znamok z maturity: 2.3
+Xie Caiping ma priemer znamok z maturity: 3.3
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.0
+Al Capone ma priemer znamok z maturity: 1.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 1.8
+Pablo Escobar ma priemer znamok z maturity: 2.3
+John Gotti ma priemer znamok z maturity: 2.5
+Hisayuki Machii ma priemer znamok z maturity: 2.8
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 3.8
+Dawood Ibrahim ma priemer znamok z maturity: 2.8
+Xie Caiping ma priemer znamok z maturity: 2.3
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.5
+Al Capone ma priemer znamok z maturity: 2.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.5
+Pablo Escobar ma priemer znamok z maturity: 3.3
+John Gotti ma priemer znamok z maturity: 1.8
+Hisayuki Machii ma priemer znamok z maturity: 3.3
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 1.5
+Salvatore Riina ma priemer znamok z maturity: 4.0
+Dawood Ibrahim ma priemer znamok z maturity: 3.8
+Xie Caiping ma priemer znamok z maturity: 2.8
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.8
+Al Capone ma priemer znamok z maturity: 2.8
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.8
+Pablo Escobar ma priemer znamok z maturity: 2.3
+John Gotti ma priemer znamok z maturity: 3.0
+Hisayuki Machii ma priemer znamok z maturity: 3.8
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.5
+Salvatore Riina ma priemer znamok z maturity: 2.8
+Dawood Ibrahim ma priemer znamok z maturity: 2.3
+Xie Caiping ma priemer znamok z maturity: 2.8
+---------------------------------------------------------
+Semion Mogilev ma priemer znamok z maturity: 3.3
+Al Capone ma priemer znamok z maturity: 2.5
+Charles "Lucky" Luciano ma priemer znamok z maturity: 3.3
+Pablo Escobar ma priemer znamok z maturity: 2.5
+John Gotti ma priemer znamok z maturity: 4.0
+Hisayuki Machii ma priemer znamok z maturity: 3.8
+Tony "Big Tuna" Accardi ma priemer znamok z maturity: 2.8
+Salvatore Riina ma priemer znamok z maturity: 3.5
+Dawood Ibrahim ma priemer znamok z maturity: 3.0
+Xie Caiping ma priemer znamok z maturity: 3.0
+---------------------------------------------------------

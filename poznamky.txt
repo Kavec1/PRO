@@ -1,4 +1,4 @@
-	Jednoduché príkazy
+Jednoduché príkazy
 	príkaz - povel na vykonanie èinnosti
 	vstup("read", "readln()"), vıstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
 
@@ -30,7 +30,7 @@ viacnásobné vetvenie(case)
 	else príkaz; //nepovinné
 	end;
 
-shortstring - od 1 po 255 znakov,
+shortstring - od 0 po 255 znakov,
 
 delete("reazec z ktorého","ktorá pozícia","ko¾ko miest")
 insert("vkladanı podreacez","reazec do ktorého sa vkladá","pozícia v tomto reazci")
@@ -39,4 +39,15 @@ copy("z ktorého reazca sa bude kopírova","od akej pozície v tomto reazci","ko
 
 chr(64) vráti znak pre hodnotu 64(@)
 ord(A) vráti hodnotu pre znak A(65) 
+
+
+Math
+	Max(hodnota1,hodnota2) //Nájde najväèšiu hodnotu z tıchto dvoch
+	Min(hodnota1,hodnota2)
+	MaxValue(pole) //Nájde najväèšiu hodnotu v poli
+	MinValue(pole)
+
+SysUtils
+	IntToStr()
+	StrToInt()
 
