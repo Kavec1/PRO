@@ -1,0 +1,26 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  crt,
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };
+
+begin
+  randomize;
+  while true do
+  begin
+    textcolor(random(17));
+    gotoxy(random(35)+1,random(20)+1);
+    writeln('JA ');
+    if keypressed then
+      if readkey='n' then
+        exit;
+  end;
+
+end.
+

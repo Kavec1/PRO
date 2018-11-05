@@ -51,3 +51,10 @@ SysUtils
 	IntToStr()
 	StrToInt()
 
+#77-vpravo
+#75-vlavo
+#72-hore
+#80-dole
+#27-ESC
+http://wiki.freepascal.org/ASCII
+
