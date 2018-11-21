@@ -13,127 +13,96 @@
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="17" Y="1"/>
-        <UsageCount Value="21"/>
+        <CursorPos X="20" Y="24"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="26" HistoryIndex="25">
+    <JumpHistory Count="20" HistoryIndex="19">
       <Position1>
         <Filename Value="project1.lpr"/>
-        <Caret Line="21" Column="10" TopLine="1"/>
+        <Caret Line="17" Column="10" TopLine="1"/>
       </Position1>
       <Position2>
         <Filename Value="project1.lpr"/>
-        <Caret Line="19" Column="7" TopLine="1"/>
+        <Caret Line="16" Column="19" TopLine="1"/>
       </Position2>
       <Position3>
         <Filename Value="project1.lpr"/>
-        <Caret Line="22" Column="4" TopLine="1"/>
+        <Caret Line="12" Column="20" TopLine="1"/>
       </Position3>
       <Position4>
         <Filename Value="project1.lpr"/>
-        <Caret Line="20" Column="44" TopLine="1"/>
+        <Caret Line="24" Column="20" TopLine="1"/>
       </Position4>
       <Position5>
         <Filename Value="project1.lpr"/>
-        <Caret Line="6" Column="12" TopLine="1"/>
+        <Caret Line="30" Column="3" TopLine="1"/>
       </Position5>
       <Position6>
         <Filename Value="project1.lpr"/>
-        <Caret Line="21" Column="52" TopLine="1"/>
+        <Caret Line="24" Column="18" TopLine="1"/>
       </Position6>
       <Position7>
         <Filename Value="project1.lpr"/>
-        <Caret Line="26" Column="17" TopLine="1"/>
+        <Caret Line="27" Column="23" TopLine="1"/>
       </Position7>
       <Position8>
         <Filename Value="project1.lpr"/>
-        <Caret Line="27" Column="22" TopLine="1"/>
+        <Caret Line="24" Column="18" TopLine="1"/>
       </Position8>
       <Position9>
         <Filename Value="project1.lpr"/>
-        <Caret Line="21" Column="1" TopLine="1"/>
+        <Caret Line="12" Column="16" TopLine="1"/>
       </Position9>
       <Position10>
         <Filename Value="project1.lpr"/>
-        <Caret Line="22" Column="1" TopLine="1"/>
+        <Caret Line="24" Column="18" TopLine="1"/>
       </Position10>
       <Position11>
         <Filename Value="project1.lpr"/>
-        <Caret Line="23" Column="1" TopLine="1"/>
+        <Caret Line="27" Column="23" TopLine="1"/>
       </Position11>
       <Position12>
         <Filename Value="project1.lpr"/>
-        <Caret Line="24" Column="1" TopLine="1"/>
+        <Caret Line="24" Column="18" TopLine="1"/>
       </Position12>
       <Position13>
         <Filename Value="project1.lpr"/>
-        <Caret Line="25" Column="1" TopLine="1"/>
+        <Caret Line="12" Column="16" TopLine="1"/>
       </Position13>
       <Position14>
         <Filename Value="project1.lpr"/>
-        <Caret Line="26" Column="1" TopLine="1"/>
+        <Caret Line="27" Column="23" TopLine="1"/>
       </Position14>
       <Position15>
         <Filename Value="project1.lpr"/>
-        <Caret Line="27" Column="1" TopLine="1"/>
+        <Caret Line="12" Column="7" TopLine="1"/>
       </Position15>
       <Position16>
         <Filename Value="project1.lpr"/>
-        <Caret Line="36" Column="11" TopLine="1"/>
+        <Caret Line="26" Column="3" TopLine="1"/>
       </Position16>
       <Position17>
         <Filename Value="project1.lpr"/>
-        <Caret Line="15" Column="21" TopLine="1"/>
+        <Caret Line="29" Column="9" TopLine="1"/>
       </Position17>
       <Position18>
         <Filename Value="project1.lpr"/>
-        <Caret Line="13" Column="33" TopLine="1"/>
+        <Caret Line="21" Column="11" TopLine="1"/>
       </Position18>
       <Position19>
         <Filename Value="project1.lpr"/>
-        <Caret Line="48" Column="21" TopLine="6"/>
+        <Caret Line="24" Column="22" TopLine="1"/>
       </Position19>
       <Position20>
         <Filename Value="project1.lpr"/>
-        <Caret Line="50" Column="48" TopLine="10"/>
+        <Caret Line="28" Column="22" TopLine="1"/>
       </Position20>
-      <Position21>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="14" Column="20" TopLine="1"/>
-      </Position21>
-      <Position22>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="58" Column="9" TopLine="20"/>
-      </Position22>
-      <Position23>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="61" Column="11" TopLine="20"/>
-      </Position23>
-      <Position24>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="57" Column="19" TopLine="24"/>
-      </Position24>
-      <Position25>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="71" Column="30" TopLine="29"/>
-      </Position25>
-      <Position26>
-        <Filename Value="project1.lpr"/>
-        <Caret Line="78" Column="9" TopLine="39"/>
-      </Position26>
     </JumpHistory>
   </ProjectSession>
-  <Debugging>
-    <Watches Count="1">
-      <Item1>
-        <Expression Value="line"/>
-      </Item1>
-    </Watches>
-  </Debugging>
   <EditorMacros Count="0"/>
 </CONFIG>

@@ -1,0 +1,41 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };      (*NEFUNGUJE*)
+var
+  doc:array of array of string;
+  tf:textFile;
+  i,j:integer;
+  line:shortstring;
+begin
+  assignFile(tf,'vstup.txt');
+  reset(tf);
+  repeat
+    inc(i);
+    readln(tf,line);
+    repeat
+    inc(j);
+    delete(s,1,pos(' ',s));
+    until pos(' ',line)=0;
+
+  until eof(tf);
+
+  reset(tf);
+  setLength(doc,i,1);
+  i:=0;
+
+  repeat
+    readln(tf,doc[i,0]);
+    inc(i);
+  until eof(tf);
+  writeln(doc[10,0]);
+  readln;
+  closeFile(tf);
+end.
+

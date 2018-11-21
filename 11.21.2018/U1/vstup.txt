@@ -1,0 +1,31 @@
+Efektivnost algoritmu je
+viac menej doplnkova
+niekedy vsak velmi potrebna vlastnost
+Zvlast pri
+velmi velkom pocte spracovavanych udajov
+ako aj tam
+kde potrebujeme velky pocet zmien spracovavanych informacii
+Casto je cielom najskor
+zostavit hocijaky
+ale funkcny algoritmus
+potom ho v pripade potreby a
+s lepsou znalostou problemu vylepsovat
+Ako kriteria efektivnosti sluzia casova a
+pamatova zlozitost algoritmu
+ktorym sa este budeme venovat
+Uvedme si dva priklady pokusu
+o efektivnost algoritmu (postupu)
+Priklad Prechod cez ulicu
+Tuto ulohu sme uz mali
+Ale mame aj
+jedno pre zapis urcite efektivne riesenie
+ktore vytvoril ziak 5. triedy
+zakladnej skoly (dnes prezident slusne prosperujucej pocitacovej firmy)
+1. Chod cez ulicu tak
+aby ta nic nezrazilo
+Je jasne
+ze za toto riesenie ziskal plny pocet bodov
+aj ked je urcene skor pre cloveka
+ktory ma uz svoje skusenosti s dopravnou situaciou
+Efektivita zapisu a
+skoro genialny napad su vsak zrejme
