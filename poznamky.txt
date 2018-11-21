@@ -51,6 +51,14 @@ SysUtils
 	IntToStr()
 	StrToInt()
 
+crt
+	textcolor()
+	clrscr
+	gotoxy()
+	keypressed
+	readkey()
+	textBacground()
+
 #77-vpravo
 #75-vlavo
 #72-hore
