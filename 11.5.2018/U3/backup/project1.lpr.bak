@@ -13,6 +13,7 @@ type
   tcrtcoord = 1..255;
 var
   x,y:tcrtcoord;
+  key:char;
 procedure left;
 begin
   //clrscr;
@@ -37,8 +38,9 @@ begin
   x:=1;
   y:=1;
   gotoxy(x,y);
-  //write('X');
-  while ord(readkey)=0 do
+  while not keypressed do begin
+  key:=readkey;
+  if key=#0 then
   begin
     case readkey of
       #75:left;
@@ -51,6 +53,13 @@ begin
       #73:write('-');
     end;
     gotoxy(x,y);
+  end
+  else
+  if key=#13 then
+    write('enter')
+    else
+    wrtie(key);
+
   end;
 end.
 

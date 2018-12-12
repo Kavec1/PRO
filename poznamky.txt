@@ -1,4 +1,4 @@
-Jednoduché príkazy
+	Jednoduché príkazy
 	príkaz - povel na vykonanie èinnosti
 	vstup("read", "readln()"), výstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
 
@@ -65,4 +65,13 @@ crt
 #80-dole
 #27-ESC
 http://wiki.freepascal.org/ASCII
+
+výraz - aritmetické(výsledok je èíslo), relaèné(boolean), logické
+	-premenné, konštaty, okrúhle zátvorky, funkcie, aritmetické operátory
+
+priorita operátorov - not, unárne mínus, multiplikatívne operátory(krát, delenie, div, mod, log. súèin), aditívne(+, -, or xor), relaèné(<,>,<>,<=,>=,=)
+
+konjunkcia,sekvencia(bez if)
+disjunkcia(vetvenie, iba jenda  vetva)
+repetièný(nieko¾ko násobné opakovanie)
 

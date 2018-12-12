@@ -1,0 +1,171 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  Math, CRT, SysUtils,
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };
+var
+  tf:textFile;
+  txt:array of shortstring;
+  pole:array of integer;
+  d,code,key,dlzka:integer;
+
+procedure init;
+begin
+  reset(tf);
+  dlzka:=0;
+  while not eof(tf) do begin
+    readln(tf);
+    inc(dlzka);
+  end;
+  setLength(txt,dlzka);
+  setLength(pole,dlzka);
+  reset(tf);
+  d:=0;
+  while not eof(tf) do begin
+    readln(tf,txt[d]);
+    pole[d]:=length(txt[d]);
+    inc(d);
+  end;
+  closeFile(tf);
+end;
+procedure abcd;
+var
+  i,j:integer;
+  slovo:shortstring;
+begin
+  clrscr;
+  i:=0;
+  j:=0;
+  repeat
+    for i:=0 to length(txt)-1 do
+    begin
+      if txt[i]>txt[i+1] then
+      begin
+        slovo:=txt[i];
+        txt[i]:=txt[i+1];
+        txt[i+1]:=slovo;
+      end;
+    end;
+    inc(j);
+  until j=dlzka;
+  for i:=0 to length(txt)-1 do
+    writeln(txt[i]);
+end;
+procedure naj_slovo;
+var
+  d:integer;
+begin
+  clrscr;
+  d:=-1;
+  repeat
+    inc(d);
+  until length(txt[d])=maxValue(pole);
+  writeln(txt[d]);
+end;
+procedure pridanie;
+var
+  i,x,y:integer;
+  key:char;
+  slovo:shortstring;
+begin
+  clrscr;
+  x:=1;
+  y:=1;
+  slovo:='';
+  for i:=0 to length(txt)-1 do
+    writeln(txt[i]);
+  while not keypressed do begin
+    gotoxy(x,y);
+    key:=readkey;
+    if key=#0 then begin
+      case readkey of
+        #72:dec(y);
+        #80:inc(y);
+      end;
+      gotoxy(x,y);
+    end else
+    if key=#13 then begin
+      if y>length(txt) then
+        setLength(txt,length(txt)+1);
+
+      txt[y-1]:=slovo;
+      rewrite(tf);
+      for i:=0 to length(txt)-1 do
+        writeln(tf,txt[i]);
+      closeFile(tf);
+      clrscr;
+      break;
+    end else begin
+      write(key);
+      slovo:=slovo+key;
+      inc(x);
+    end;
+  end;
+end;
+procedure vymazanie;
+var
+  i,x,y:integer;
+  key:char;
+begin
+  clrscr;
+  x:=1;
+  y:=1;
+  for i:=0 to length(txt)-1 do
+    writeln(txt[i]);
+
+  while not keypressed do begin
+    gotoxy(x,y);
+    key:=readkey;
+    if key=#0 then begin
+      case readkey of
+        #72:dec(y);
+        #80:inc(y);
+      end;
+      gotoxy(x,y);
+    end else
+    if key=#13 then begin
+      for i:=y-1 to length(txt)-1 do
+        if i=length(txt)-1 then
+
+        else
+          txt[i]:=txt[i+1];
+      setLength(txt,length(txt)-1);
+      rewrite(tf);
+      for i:=0 to length(txt)-1 do
+        writeln(tf,txt[i]);
+      closeFile(tf);
+      clrscr;
+      break;
+    end;
+  end;
+end;
+
+
+begin
+  assignFile(tf,'vstup.txt');
+  while not keypressed do begin
+    init;
+    writeln;
+    writeln('Stlac 1 pre najdlhsie slovo');
+    writeln('Stlac 2 pre vsetky slova zoradene v abecednom poradi');
+    writeln('Stlac 3 pre pridanie slova');
+    writeln('Stlac 4 pre vymazanie slova');
+    writeln('Stlac 0 pre ukoncenie');
+    val(readkey,key,code);
+    if code=0 then
+      case key of
+        1:naj_slovo;
+        2:abcd;
+        3:pridanie;
+        4:vymazanie;
+        0:break;
+      end;
+  end;
+end.
+
