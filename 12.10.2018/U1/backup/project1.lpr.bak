@@ -13,10 +13,11 @@ var
   tf:textFile;
   txt:array of shortstring;
   pole:array of integer;
-  d,code,key,dlzka:integer;
+  d,i,code,key,dlzka:integer;
 
 procedure init;
 begin
+  clrscr;
   reset(tf);
   dlzka:=0;
   while not eof(tf) do begin
@@ -56,6 +57,9 @@ begin
   until j=dlzka;
   for i:=0 to length(txt)-1 do
     writeln(txt[i]);
+  writeln;
+  writeln('pre navrat slacete 0');
+  readkey;
 end;
 procedure naj_slovo;
 var
@@ -66,7 +70,10 @@ begin
   repeat
     inc(d);
   until length(txt[d])=maxValue(pole);
-  writeln(txt[d]);
+  writeln('najdlhsie slovo: ',txt[d]);
+  writeln;
+  writeln('pre navrat slacete 0');
+  readkey;
 end;
 procedure pridanie;
 var
@@ -90,22 +97,22 @@ begin
       end;
       gotoxy(x,y);
     end else
-    if key=#13 then
+    if key=#13 then begin
       if y>length(txt) then
-        setLength(txt,length(txt)+1)
-      else begin
-        txt[y-1]:=slovo;
-        rewrite(tf);
-        for i:=0 to length(txt)-1 do
-          writeln(tf,txt[i]);
-        closeFile(tf);
-        clrscr;
-        break;
-      end else begin
-        write(key);
-        slovo:=slovo+key;
-        inc(x);
-      end;
+        setLength(txt,length(txt)+1);
+
+      txt[y-1]:=slovo;
+      rewrite(tf);
+      for i:=0 to length(txt)-1 do
+        writeln(tf,txt[i]);
+      closeFile(tf);
+      clrscr;
+      break;
+    end else begin
+      write(key);
+      slovo:=slovo+key;
+      inc(x);
+    end;
   end;
 end;
 procedure vymazanie;
@@ -145,18 +152,30 @@ begin
     end;
   end;
 end;
-
+procedure vypis;
+var
+  i:integer;
+begin
+  clrscr;
+  for i:=0 to length(txt)-1 do
+    writeln(txt[i]);
+  writeln;
+  writeln('pre navrat slacete 0');
+  readkey;
+end;
 
 begin
   assignFile(tf,'vstup.txt');
   while not keypressed do begin
     init;
-    writeln;
+    writeln('Basic editor');
     writeln('Stlac 1 pre najdlhsie slovo');
     writeln('Stlac 2 pre vsetky slova zoradene v abecednom poradi');
     writeln('Stlac 3 pre pridanie slova');
     writeln('Stlac 4 pre vymazanie slova');
+    writeln('Stlac 5 pre vypisanie slov');
     writeln('Stlac 0 pre ukoncenie');
+    writeln('Pre upravu slov zo suboru zvolte moznost 1-4');
     val(readkey,key,code);
     if code=0 then
       case key of
@@ -164,6 +183,7 @@ begin
         2:abcd;
         3:pridanie;
         4:vymazanie;
+        5:vypis;
         0:break;
       end;
   end;
