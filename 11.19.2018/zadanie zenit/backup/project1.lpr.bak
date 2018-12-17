@@ -1,4 +1,4 @@
-program project 1;
+program project1;
 
 {$mode objfpc}{$H+}
 
@@ -19,6 +19,8 @@ var
 begin
   assignfile(tf,'vstup.txt');
   reset(tf);
+  DecimalSeparator:='.';
+  Testit;
   c:=0;
   writeln('M. KAVEC 4B GVOZA');
   writeln('Indiana Jones hlada Janosikov poklad.');

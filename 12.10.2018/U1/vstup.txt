@@ -22,6 +22,7 @@ procedura
 funkcia
 podprogram
 begin
+end
 kopirovanie
 vymazanie
 pozicia
@@ -51,4 +52,3 @@ projektor
 jednoznacnost
 hromadnost
 rezultativnost
-end

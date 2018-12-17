@@ -19,6 +19,7 @@ var
 begin
   assignfile(tf,'vstup.txt');
   reset(tf);
+  DecimalSeparator:='.';
   c:=0;
   writeln('M. KAVEC 4B GVOZA');
   writeln('Indiana Jones hlada Janosikov poklad.');
