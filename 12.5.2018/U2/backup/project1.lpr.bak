@@ -30,7 +30,7 @@ begin
 
   for i:=0 to rozmer do begin
     for j:=0 to rozmer do
-      write(pole[i,j]:4);
+      write(pole[i,j]:6);
     writeln;
   end;
   writeln;
@@ -47,7 +47,7 @@ begin
 
   for i:=0 to rozmer do begin
     for j:=0 to rozmer do
-      write(pole[i,j]:4);
+      write(pole[i,j]:6);
     writeln;
   end;
 
