@@ -12,9 +12,9 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="15" Y="59"/>
-        <FoldState Value=" T0QOB021 TKd05a"/>
+        <TopLine Value="22"/>
+        <CursorPos X="23" Y="79"/>
+        <FoldState Value=" T0SOB021 TKf05s"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -22,7 +22,7 @@
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="6" HistoryIndex="5">
+    <JumpHistory Count="8" HistoryIndex="7">
       <Position1>
         <Filename Value="project1.lpr"/>
         <Caret Line="26" Column="28" TopLine="1"/>
@@ -47,6 +47,14 @@
         <Filename Value="project1.lpr"/>
         <Caret Line="25" Column="10" TopLine="1"/>
       </Position6>
+      <Position7>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="14" Column="7" TopLine="8"/>
+      </Position7>
+      <Position8>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="76" Column="13" TopLine="12"/>
+      </Position8>
     </JumpHistory>
   </ProjectSession>
   <EditorMacros Count="0"/>

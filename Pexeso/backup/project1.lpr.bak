@@ -11,10 +11,12 @@ uses
   { you can add units after this };
 var
   pole:array of array of char;
-  i,j,rozmer,h,a,b,c,d:integer;
-  p:char;
+  x,y,i,j,rozmer,h,a,b,c,d:integer;
+  p,key:char;
 begin
   randomize;
+  x:=2;
+  y:=1;
   readln(rozmer);
   if (rozmer mod 2)=1 then
     inc(rozmer);
@@ -56,10 +58,38 @@ begin
 
   for i:=0 to rozmer do begin
     for j:=0 to rozmer do
-      write('*');
+      write('*':2);
     writeln;
   end;
 
+   while not keypressed do begin
+    gotoxy(x,y);
+    key:=readkey;
+    if key=#0 then begin
+      case readkey of
+        #72:begin
+              if y<>1 then
+                dec(y);
+            end;
+        #80:begin
+              if y<>rozmer+1 then
+                inc(y);
+            end;
+        #77:begin
+              if x<>2*rozmer+2 then
+                inc(x,2);
+            end;
+        #75:begin
+              if x<>2 then
+                dec(x,2);
+            end;
+      end;
+      //writeln(x,y);
+      gotoxy(x,y);
+    end else
+    if key=#13 then
+      break;
+  end;
   readln;
 end.
 
