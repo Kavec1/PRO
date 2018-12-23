@@ -82,6 +82,10 @@ begin
   h2:=false;
   hs1:=0;
   hs2:=0;
+  writeln('Toto je hra pexeso pre 2 hracov');
+  writeln('Hra sa ovlada pomocu sipok a potvrdzuje sa cez enter');
+  writeln;
+  write('Zadajte rozmer hracej plochy: ');
   readln(rozmer);
   if (rozmer mod 2)=1 then
     inc(rozmer);

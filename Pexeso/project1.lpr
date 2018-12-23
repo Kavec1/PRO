@@ -52,10 +52,12 @@ end;
 procedure game_end;
 begin
   clrscr;
-  if hs1>hs2 then
-    writeln('Vyhral Hrac1 s ',hs1,' bodmy')
-  else
-    writeln('Vyhral Hrac2 s ',hs2,' bodmy');
+  if js1=hs2 then
+    writeln('Remiza')
+  else if hs1>hs2 then
+         writeln('Vyhral Hrac1 s ',hs1,' bodmy')
+       else
+         writeln('Vyhral Hrac2 s ',hs2,' bodmy');
   readln;
 end;
 
