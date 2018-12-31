@@ -31,7 +31,7 @@ begin
   kx2:=(x div 2)-1;
   ky2:=y-1;
   pole[(x div 2)-1,y-1]:='*';
-  delay(1500);
+  delay(1000);
   if k1=k2 then begin
     if h1 then
       inc(hs1)
@@ -52,10 +52,12 @@ end;
 procedure game_end;
 begin
   clrscr;
-  if hs1>hs2 then
-    writeln('Vyhral Hrac1 s ',hs1,' bodmy')
-  else
-    writeln('Vyhral Hrac2 s ',hs2,' bodmy');
+  if hs1=hs2 then
+    writeln('Remiza')
+  else if hs1>hs2 then
+         writeln('Vyhral Hrac1 s ',hs1,' bodmi')
+       else
+         writeln('Vyhral Hrac2 s ',hs2,' bodmi');
   readln;
 end;
 
@@ -82,33 +84,37 @@ begin
   h2:=false;
   hs1:=0;
   hs2:=0;
+  h:=65;
+
   writeln('Toto je hra pexeso pre 2 hracov');
-  writeln('Hra sa ovlada pomocu sipok a potvrdzuje sa cez enter');
+  writeln('Hra sa ovlada pomocu sipiek a potvrdzuje sa cez enter');
   writeln;
+  writeln('Rozmer hracej plochy je v rozmedzi 2-10, len parne');
   write('Zadajte rozmer hracej plochy: ');
   readln(rozmer);
+
   if (rozmer mod 2)=1 then
     inc(rozmer);
+
   if rozmer>10 then
     rozmer:=10;
+
   SetLength(pole,rozmer,rozmer);
   dec(rozmer);
-  h:=64;
   clrscr;
-  for i:=0 to rozmer do begin        //vytvorenie hacej plochy
-    for j:=0 to rozmer do begin
-      if (j mod 2)=1 then
+
+  for i:=0 to rozmer do       //vytvorenie hracej plochy
+    for j:=0 to rozmer do
+      if (j mod 2)=0 then
         pole[i,j]:=chr(h)
       else begin
-        inc(h);
         pole[i,j]:=chr(h);
-        if h=90 then
+        inc(h);
+        if h=91 then
           h:=97;
       end;
-    end;
-  end;
 
-(*  for i:=0 to rozmer do begin
+ (* for i:=0 to rozmer do begin
     for j:=0 to rozmer do
       write(pole[i,j]:2);
     writeln;
@@ -167,11 +173,13 @@ begin
       gotoxy(x,y);
     end else
     if key=#13 then begin
-      if(k mod 2)=1 then
-        karta1(x,y)
-      else
-        karta2(x,y);
-      inc(k);
+      if pole[(x div 2)-1,y-1]<>'*' then begin
+        if(k mod 2)=1 then
+          karta1(x,y)
+        else
+          karta2(x,y);
+        inc(k);
+      end;
     end;
   end;
 end.
