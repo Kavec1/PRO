@@ -75,3 +75,9 @@ konjunkcia,sekvencia(bez if)
 disjunkcia(vetvenie, iba jenda  vetva)
 repetièný(nieko¾ko násobné opakovanie)
 
+assignFile(interný nazov,nazov dokumentu);
+append(interný nazov);  //otvorí existujúci dokumnet a doplní
+reset(interný nazov);   //otvorí existujúci dokumnet a èíta
+rewrite(interný nazov); //vytvorí dokumnet
+closeFile(interný nazov);
+
