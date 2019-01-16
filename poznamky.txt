@@ -1,3 +1,4 @@
+https://www.gymrk.sk/Direr/pascal/index.htm#ucivo
 	Jednoduché príkazy
 	príkaz - povel na vykonanie èinnosti
 	vstup("read", "readln()"), výstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
@@ -81,3 +82,8 @@ reset(interný nazov);   //otvorí existujúci dokumnet a èíta
 rewrite(interný nazov); //vytvorí dokumnet
 closeFile(interný nazov);
 
+function 'názov' (formalne premenné:údajový typ):údajový typ;
+var lokálne premenné
+begin
+  'názov':=
+end;

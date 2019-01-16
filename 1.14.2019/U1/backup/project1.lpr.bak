@@ -1,0 +1,38 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes, kniznica
+  { you can add units after this };
+var
+  a:real;
+  c,b:integer;
+  retazec:shortstring;
+  h:shortstring;
+
+  function vyskyt(r:shortstring;h:shortstring):integer;
+  var
+    v,i:integer;
+  begin
+    v:=0;
+    for i:=1 to dlzka_r(r) do
+      if r[i]=h[1] then
+        if copy(r,i,dlzka_r(h))=h then begin
+          vyskyt:=i;
+          exit;
+        end;
+    vyskyt:=0;
+  end;
+
+begin
+  readln(retazec);
+  readln(h);
+  //readln(c);
+  writeln(vyskyt(retazec,h));
+  readln;
+end.
+
