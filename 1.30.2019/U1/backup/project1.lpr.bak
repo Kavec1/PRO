@@ -1,0 +1,49 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  sysUtils,
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes
+  { you can add units after this };
+var
+  tf:TextFile;
+  pole: array of integer;
+  p,i:integer;
+  c:shortstring;
+  a,b:char;
+begin
+  assignFile(tf,'vstup.txt');
+  reset(tf);
+  p:=0;
+  while not eoln(tf) do begin
+    read(tf,i);
+    inc(p);
+  end;
+  setLength(pole,p);
+  reset(tf);
+  p:=0;
+  while not eoln(tf) do begin
+    read(tf,pole[p]);
+    inc(p);
+  end;
+  closeFile(tf);
+  for i:=0 to length(pole)-2 do
+    if abs(pole[i]-pole[i+1])>5 then begin
+      c:=intToStr(pole[i+1]);
+      a:=c[1];
+      b:=c[2];
+      c:=b+a;
+      pole[i+1]:=strToInt(c);
+    end;
+  rewrite(tf);
+  for i:=0 to length(pole)-1 do
+    writeln(tf,pole[i]);
+  closeFile(tf);
+  writeln('DONE!');
+  readln;
+end.
+

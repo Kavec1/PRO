@@ -1,0 +1,61 @@
+program project1;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+  Classes, kniznica
+  { you can add units after this };
+var
+  a:real;
+  c,b:integer;
+  retazec:shortstring;
+  h:shortstring;
+  pole:array of shortstring;
+procedure sort(var pole:array of shortstring;bool:boolean);
+var
+  i,j:integer;
+  slovo:shortstring;
+begin
+  j:=0;
+  if bool then begin       //vzostupne
+    repeat
+      for i:=0 to length(pole)-2 do begin
+        if pole[i]>pole[i+1] then begin
+          slovo:=pole[i];
+          pole[i]:=pole[i+1];
+          pole[i+1]:=slovo;
+        end;
+      end;
+      inc(j);
+    until j=length(pole);
+  end else begin         //zostupne
+    repeat
+      for i:=0 to length(pole)-2 do begin
+        if pole[i]<pole[i+1] then begin
+          slovo:=pole[i];
+          pole[i]:=pole[i+1];
+          pole[i+1]:=slovo;
+        end;
+      end;
+      inc(j);
+    until j=length(pole);
+  end;
+end;
+begin
+  //readln(retazec);
+  //readln(h);
+  //readln(c);
+  setLength(pole,3);
+  pole[0]:='ahoj';
+  pole[1]:='5';
+  pole[2]:='dobre';
+  sort(pole,false);
+  for c:=0 to length(pole)-1 do
+    writeln(pole[c]);
+  //writeln(pole);
+  readln;
+end.
+

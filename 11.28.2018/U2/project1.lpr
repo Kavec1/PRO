@@ -31,8 +31,9 @@ begin
     readln(tf,pole[i]);
     inc(i);
   end;
+
   repeat
-    for i:=0 to length(pole)-1 do
+    for i:=0 to length(pole)-2 do
     begin
       if pole[i]>pole[i+1] then
       begin
@@ -42,7 +43,7 @@ begin
       end;
     end;
     inc(j);
-  until j=rozmer;
+  until j=rozmer-1;
   for i:=0 to length(pole)-1 do
     writeln(pole[i]);
   CloseFile(tf);

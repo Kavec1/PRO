@@ -2,4 +2,5 @@
 <CONFIG>
   <Compiler Value="C:\lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe" Date="1162572796"/>
   <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -FiH:\PRO\PRO\11.28.2018\U3\lib\i386-win32 -FuH:\PRO\PRO\11.28.2018\U3\ -FUH:\PRO\PRO\11.28.2018\U3\lib\i386-win32\ -l project1.lpr"/>
+  <Complete Value="False"/>
 </CONFIG>

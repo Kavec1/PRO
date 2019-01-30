@@ -87,3 +87,8 @@ var lokálne premenné
 begin
   'názov':=
 end;
+
+Typy súborov
+	Textový (èkolo¾vek), uknoèenia riadkov aj súboru (read,write,readln,writeln)
+	Typové (iba jeden typ v òom) ako pole, iba ukunèenie súboru (read,write) èísluje sa od 0!! seek(var F; n:longint)-presunie na zadané poradové èislo dátového objektu, filePos(F)-aktuálna pozícia, FileSize(F)-poèet objektov v súbore, teumcate(F)vymaže všetko od pozície kde som
+	Netypové (položky rôzneho typu)
