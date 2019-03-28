@@ -1,9 +1,9 @@
 https://www.gymrk.sk/Direr/pascal/index.htm#ucivo
-	Jednoduché príkazy
-	príkaz - povel na vykonanie èinnosti
-	vstup("read", "readln()"), vıstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
+	JednoduchÃ© prÃ­kazy
+	prÃ­kaz - povel na vykonanie Äinnosti
+	vstup("read", "readln()"), vÃ½stup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedÃºry a prÃ¡zdny prÃ­kaz
 
-Zloené príkazy
+ZloÅ¾enÃ© prÃ­kazy
 	cykly(for, while, repeat)
 
 	for i:=1 ("to","downto") 7 do
@@ -20,32 +20,32 @@ Zloené príkazy
 		sth
 	until "podmienka";
 
-viacnásobné vetvenie(case)
-	case "hladanı objekt" of
-		1: príkaz;
-		2..10: príkaz;
+viacnÃ¡sobnÃ© vetvenie(case)
+	case "hladanÃ½ objekt" of
+		1: prÃ­kaz;
+		2..10: prÃ­kaz;
 		11,15,26: begin
-				príkaz1;
-				príkaz2;
+				prÃ­kaz1;
+				prÃ­kaz2;
 			  end;
-	else príkaz; //nepovinné
+	else prÃ­kaz; //nepovinnÃ©
 	end;
 
 shortstring - od 0 po 255 znakov,
 
-delete("reazec z ktorého","ktorá pozícia","ko¾ko miest")
-insert("vkladanı podreacez","reazec do ktorého sa vkladá","pozícia v tomto reazci")
-pos("h¾adanı reazec","v ktorom reazci h¾adá")
-copy("z ktorého reazca sa bude kopírova","od akej pozície v tomto reazci","ko¾ko miest od tejto pozície")
+delete("reÅ¥azec z ktorÃ©ho","ktorÃ¡ pozÃ­cia","koÄ¾ko miest")
+insert("vkladanÃ½ podreÅ¥acez","reÅ¥azec do ktorÃ©ho sa vkladÃ¡","pozÃ­cia v tomto reÅ¥azci")
+pos("hÄ¾adanÃ½ reÅ¥azec","v ktorom reÅ¥azci hÄ¾adÃ¡")
+copy("z ktorÃ©ho reÅ¥azca sa bude kopÃ­rovaÅ¥","od akej pozÃ­cie v tomto reÅ¥azci","koÄ¾ko miest od tejto pozÃ­cie")
 
-chr(64) vráti znak pre hodnotu 64(@)
-ord(A) vráti hodnotu pre znak A(65) 
+chr(64) vrÃ¡ti znak pre hodnotu 64(@)
+ord(A) vrÃ¡ti hodnotu pre znak A(65) 
 
 
 Math
-	Max(hodnota1,hodnota2) //Nájde najväèšiu hodnotu z tıchto dvoch
+	Max(hodnota1,hodnota2) //NÃ¡jde najvÃ¤ÄÅ¡iu hodnotu z tÃ½chto dvoch
 	Min(hodnota1,hodnota2)
-	MaxValue(pole) //Nájde najväèšiu hodnotu v poli
+	MaxValue(pole) //NÃ¡jde najvÃ¤ÄÅ¡iu hodnotu v poli
 	MinValue(pole)
 
 SysUtils
@@ -67,28 +67,31 @@ crt
 #27-ESC
 http://wiki.freepascal.org/ASCII
 
-vıraz - aritmetické(vısledok je èíslo), relaèné(boolean), logické
-	-premenné, konštaty, okrúhle zátvorky, funkcie, aritmetické operátory
+vÃ½raz - aritmetickÃ©(vÃ½sledok je ÄÃ­slo), relaÄnÃ©(boolean), logickÃ©
+	-premennÃ©, konÅ¡taty, okrÃºhle zÃ¡tvorky, funkcie, aritmetickÃ© operÃ¡tory
 
-priorita operátorov - not, unárne mínus, multiplikatívne operátory(krát, delenie, div, mod, log. súèin), aditívne(+, -, or xor), relaèné(<,>,<>,<=,>=,=)
+priorita operÃ¡torov - not, unÃ¡rne mÃ­nus, multiplikatÃ­vne operÃ¡tory(krÃ¡t, delenie, div, mod, log. sÃºÄin), aditÃ­vne(+, -, or xor), relaÄnÃ©(<,>,<>,<=,>=,=)
 
 konjunkcia,sekvencia(bez if)
 disjunkcia(vetvenie, iba jenda  vetva)
-repetiènı(nieko¾ko násobné opakovanie)
+repetiÄnÃ½(niekoÄ¾ko nÃ¡sobnÃ© opakovanie)
 
-assignFile(internı nazov,nazov dokumentu);
-append(internı nazov);  //otvorí existujúci dokumnet a doplní
-reset(internı nazov);   //otvorí existujúci dokumnet a èíta
-rewrite(internı nazov); //vytvorí dokumnet
-closeFile(internı nazov);
+assignFile(internÃ½ nazov,nazov dokumentu);
+append(internÃ½ nazov);  //otvorÃ­ existujÃºci dokumnet a doplnÃ­
+reset(internÃ½ nazov);   //otvorÃ­ existujÃºci dokumnet a ÄÃ­ta
+rewrite(internÃ½ nazov); //vytvorÃ­ dokumnet
+closeFile(internÃ½ nazov);
 
-function 'názov' (formalne premenné:údajovı typ):údajovı typ;
-var lokálne premenné
+function 'nÃ¡zov' (formalne premennÃ©:ÃºdajovÃ½ typ):ÃºdajovÃ½ typ;
+var lokÃ¡lne premennÃ©
 begin
-  'názov':=
+  'nÃ¡zov':=
 end;
 
-Typy súborov
-	Textovı (èkolo¾vek), uknoèenia riadkov aj súboru (read,write,readln,writeln)
-	Typové (iba jeden typ v òom) ako pole, iba ukunèenie súboru (read,write) èísluje sa od 0!! seek(var F; n:longint)-presunie na zadané poradové èislo dátového objektu, filePos(F)-aktuálna pozícia, FileSize(F)-poèet objektov v súbore, teumcate(F)vymae všetko od pozície kde som
-	Netypové (poloky rôzneho typu)
+Typy sÃºborov
+	TextovÃ½ (ÄkoloÄ¾vek), uknoÄenia riadkov aj sÃºboru (read,write,readln,writeln)
+	TypovÃ© (iba jeden typ v Åˆom) ako pole, iba ukunÄenie sÃºboru (read,write) ÄÃ­sluje sa od 0!! seek(var F; n:longint)-presunie na zadanÃ© poradovÃ© Äislo dÃ¡tovÃ©ho objektu, filePos(F)-aktuÃ¡lna pozÃ­cia, FileSize(F)-poÄet objektov v sÃºbore, teumcate(F)vymaÅ¾e vÅ¡etko od pozÃ­cie kde som
+	NetypovÃ© (poloÅ¾ky rÃ´zneho typu)
+
+repaint - aktualizÃ¡zia canvasu
+refresh - aktualizÃ¡cia shapeou
