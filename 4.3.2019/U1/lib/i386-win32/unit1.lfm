@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 1174
+  Height = 584
+  Top = 162
+  Width = 711
+  Caption = 'Form1'
+  ClientHeight = 584
+  ClientWidth = 711
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Image1: TImage
+    Left = 0
+    Height = 584
+    Top = 0
+    Width = 711
+    Align = alClient
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Hra'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

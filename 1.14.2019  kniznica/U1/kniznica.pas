@@ -19,6 +19,7 @@ procedure zvysit(var x:integer;o:integer);
 procedure znizit(var x:integer);
 procedure znizit(var x:integer;o:integer);
 procedure sort(var pole:array of shortstring;bool:boolean);  //true(vzostupne), false(zostupne)
+function inArray(ar:array of shortstring;st:shortstring):boolean;
 
 implementation
 
@@ -151,6 +152,18 @@ begin
       inc(j);
     until j=length(pole);
   end;
+end;
+
+function inArray(ar:array of shortstring;st:shortstring):boolean;
+var
+  p:boolean;
+  i:integer;
+begin
+  p:=false;
+  for i:=0 to length(ar)-1 do
+    if ar[i]=st then
+      p:=true;
+  inArray:=p;
 end;
 
 end.

@@ -1,0 +1,78 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls, Math;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Label1: TLabel;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    procedure Button1Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  tf:textFile;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  size,i,j:integer;
+  riadok:shortstring;
+  mena,krajiny:array of shortstring;
+  skoky:array of array of integer;
+  naj_skok:array of integer;
+begin
+  size:=0;
+  i:=0;
+  assignFile(tf,'skoky_do_dialky.txt');
+  reset(tf);
+  while not eof(tf) do begin
+    inc(size);
+    readln(tf);
+  end;
+  setlength(krajiny,size);
+  setLength(mena,size);
+  setLength(naj_skok,size);
+  setLength(skoky,size,5);
+  reset(tf);
+  while not eof(tf) do begin
+    readln(tf,riadok);
+    for j:=1 to 5 do begin
+      skoky[i][j-1]:=strToInt(copy(riadok,length(riadok)-2,3));
+      delete(riadok,length(riadok)-3,4)
+    end;
+    mena[i]:=copy(riadok,1,pos(' ',riadok)-1);
+    Memo1.Append(copy(riadok,pos(' ',riadok)+1,3));
+    krajiny[i]:=copy(riadok,pos(' ',riadok)+1,3);
+    inc(i);
+  end;
+  for j:=0 to size-1 do
+    for i:=0 to 4 do
+      if maxValue(skoky[j])=skoky[j][i] then
+         naj_skok[j]:=skoky[j][i];
+  for i:=0 to size-1 do
+    if maxValue(naj_skok)=naj_skok[i] then
+       Label1.Caption:='Najlepší skokan: '+mena[i];
+end;
+
+end.
+

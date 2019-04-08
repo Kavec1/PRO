@@ -1,0 +1,52 @@
+object Form1: TForm1
+  Left = 1142
+  Height = 527
+  Top = 0
+  Width = 762
+  Caption = 'Form1'
+  ClientHeight = 527
+  ClientWidth = 762
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Button1: TButton
+    Left = 5
+    Height = 25
+    Top = 10
+    Width = 75
+    Caption = 'Nová hra'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 96
+    Height = 23
+    Top = 24
+    Width = 80
+    TabOrder = 1
+    Text = '1'
+  end
+  object Label1: TLabel
+    Left = 96
+    Height = 15
+    Top = 8
+    Width = 69
+    Caption = 'Počet hráčov'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 15
+    Height = 25
+    Top = 65
+    Width = 75
+    Caption = 'Hoď kockou'
+    Enabled = False
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Image1: TImage
+    Left = 5
+    Height = 457
+    Top = 55
+    Width = 747
+  end
+end

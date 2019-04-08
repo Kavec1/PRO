@@ -1,0 +1,43 @@
+object Form1: TForm1
+  Left = 1145
+  Height = 240
+  Top = 85
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.2.6.0'
+  object Memo1: TMemo
+    Left = 160
+    Height = 218
+    Top = 8
+    Width = 150
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Rieš!'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 16
+    Width = 112
+    TabOrder = 2
+    Text = 'vstup_rovnica.dat'
+  end
+  object Memo2: TMemo
+    Left = 8
+    Height = 130
+    Top = 96
+    Width = 150
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+end

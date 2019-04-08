@@ -1,0 +1,179 @@
+object Form1: TForm1
+  Left = 1276
+  Height = 256
+  Top = 102
+  Width = 463
+  Caption = 'Form1'
+  ClientHeight = 256
+  ClientWidth = 463
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Red'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 96
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Green'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 184
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Blue'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 272
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Black'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 8
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Obdlžnik'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 96
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Elipsa'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Button7: TButton
+    Left = 96
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Káro'
+    OnClick = Button7Click
+    TabOrder = 6
+  end
+  object Button8: TButton
+    Left = 8
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Plný'
+    OnClick = Button8Click
+    TabOrder = 7
+  end
+  object Button9: TButton
+    Left = 8
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Rámik'
+    OnClick = Button9Click
+    TabOrder = 8
+  end
+  object Button10: TButton
+    Left = 272
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'späť'
+    OnClick = Button10Click
+    TabOrder = 9
+  end
+  object Shape1: TShape
+    Left = 264
+    Height = 104
+    Top = 80
+    Width = 65
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 6
+    Width = 34
+    Caption = 'Label1'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 64
+    Width = 34
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 120
+    Width = 34
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Button11: TButton
+    Left = 96
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Random RGB'
+    OnClick = Button11Click
+    TabOrder = 10
+  end
+  object Button12: TButton
+    Left = 184
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'Pohyb'
+    OnClick = Button12Click
+    TabOrder = 11
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 184
+    Height = 23
+    Top = 82
+    Width = 50
+    MaxValue = 1000
+    OnChange = SpinEdit1Change
+    TabOrder = 12
+    Value = 65
+  end
+  object SpinEdit2: TSpinEdit
+    Left = 184
+    Height = 23
+    Top = 138
+    Width = 50
+    MaxValue = 1000
+    OnChange = SpinEdit2Change
+    TabOrder = 13
+    Value = 104
+  end
+  object ColorButton1: TColorButton
+    Left = 360
+    Height = 25
+    Top = 24
+    Width = 75
+    BorderWidth = 2
+    ButtonColorSize = 16
+    ButtonColor = clWhite
+    OnColorChanged = ColorButton1ColorChanged
+  end
+end

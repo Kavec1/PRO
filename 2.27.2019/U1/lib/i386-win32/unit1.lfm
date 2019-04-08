@@ -1,0 +1,51 @@
+object Form1: TForm1
+  Left = 1401
+  Height = 432
+  Top = 10
+  Width = 497
+  Caption = 'Form1'
+  ClientHeight = 432
+  ClientWidth = 497
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object ComboBox1: TComboBox
+    Left = 376
+    Height = 23
+    Top = 16
+    Width = 100
+    ItemHeight = 15
+    Items.Strings = (
+      'obdĺžnik'
+      'štvorec'
+      'kružnica'
+      'trojuholník'
+    )
+    OnChange = ComboBox1Change
+    TabOrder = 0
+  end
+  object Image1: TImage
+    Left = 0
+    Height = 432
+    Top = 0
+    Width = 497
+    Align = alClient
+  end
+  object TrackBar1: TTrackBar
+    Left = 264
+    Height = 25
+    Top = 14
+    Width = 100
+    Max = 100
+    OnChange = TrackBar1Change
+    Position = 0
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 128
+    Height = 15
+    Top = 24
+    Width = 129
+    Caption = 'polomer/dlzka zakladne:'
+    ParentColor = False
+  end
+end

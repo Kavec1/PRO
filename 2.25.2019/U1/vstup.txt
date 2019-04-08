@@ -1,0 +1,6 @@
+ciara 100
+vpravo
+ciara 50
+vpravo
+vpravo
+ciara 25

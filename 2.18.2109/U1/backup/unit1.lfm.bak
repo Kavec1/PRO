@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 1230
+  Height = 411
+  Top = 34
+  Width = 661
+  Caption = 'Form1'
+  ClientHeight = 411
+  ClientWidth = 661
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Image1: TImage
+    Left = 0
+    Height = 387
+    Top = 24
+    Width = 661
+    Align = alCustom
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'BOOM!'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 88
+    Height = 23
+    Top = 0
+    Width = 80
+    TabOrder = 1
+    Text = 'vstup.txt'
+  end
+end
