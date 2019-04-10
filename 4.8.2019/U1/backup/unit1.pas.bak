@@ -82,7 +82,8 @@ implementation
  end;
  procedure generate;
  var
-   SJL,ANJ,NEJ,FRJ,SPJ,MAT,FYZ,CHE,INF,BIO,GEG,DEJ,OBN,UKL,TSV :textFile;
+   tf4 :textFile;
+   i,j:integer;
  begin
    with Form1 do begin
      Button1.Visible:=False;
@@ -91,38 +92,19 @@ implementation
      Memo1.Visible:=True;
      Memo1.Clear;
      Memo1.Lines.Add('Hotovo!');
-     Memo1.Lines.Add('Ale nefunguj :)');
+     //Memo1.Lines.Add('Ale nefunguj :)');
    end;
-   assignFile(SJL,'SJL.txt');
-   assignFile(ANJ,'ANJ.txt');
-   assignFile(NEJ,'NEJ.txt');
-   assignFile(FRJ,'FRJ.txt');
-   assignFile(SPJ,'SPJ.txt');
-   assignFile(MAT,'MAT.txt');
-   assignFile(FYZ,'FYZ.txt');
-   assignFile(CHE,'CHE.txt');
-   assignFile(INF,'INF.txt');
-   assignFile(BIO,'BIO.txt');
-   assignFile(GEG,'GEG.txt');
-   assignFile(DEJ,'DEJ.txt');
-   assignFile(OBN,'OBN.txt');
-   assignFile(UKL,'UKL.txt');
-   assignFile(TSV,'TSV.txt');
-   rewrite(SJL);
-   rewrite(ANJ);
-   rewrite(NEJ);
-   rewrite(FRJ);
-   rewrite(SPJ);
-   rewrite(MAT);
-   rewrite(FYZ);
-   rewrite(CHE);
-   rewrite(INF);
-   rewrite(BIO);
-   rewrite(GEG);
-   rewrite(DEJ);
-   rewrite(OBN);
-   rewrite(UKL);
-   rewrite(TSV);
+   for i:=0 to length(predmet)-1 do begin
+     assignFile(tf4,predmet[i]+'.txt');
+     rewrite(tf4);
+     for j:=0 to length(ziak)-1 do begin
+       if znamky[j][i]=5 then begin
+         writeln(tf4,ziak[j]);
+         Form1.Memo1.Lines.Add(predmet[i]+' '+ziak[j]);
+       end;
+     end;
+     closeFile(tf4);
+   end;
  end;
  {$R *.lfm}
 
