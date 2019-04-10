@@ -159,22 +159,31 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
  var
-   meno,priezvisko,znamka: shortstring;
+   meno_priezvisko,znamka: shortstring;
    i:integer;
 begin
   if RadioGroup1.ItemIndex=1 then begin
     znamka:='';
     append(tf1);
     append(tf3);
-    meno:=Form1.Edit1.Text;
-    priezvisko:=Form1.Edit2.Text;
-    writeln(tf1,meno+' '+priezvisko);
+    meno_priezvisko:=Form1.Edit1.Text+' '+Form1.Edit2.Text;
+    setLength(ziak,length(ziak)+1);
+    ziak[length(ziak)-1]:=meno_priezvisko;
+    writeln(tf1,meno_priezvisko);
+
+    setLength(znamky,length(znamky)+1,length(predmet));
+    for i:=0 to length(predmet)-1 do
+      znamky[length(ziak)-1][i]:=random(5)+1;
     for i:=0 to length(predmet)-2 do
-      znamka:=znamka+intToStr(random(5)+1)+' ';
-    znamka:=znamka+intToStr(random(5)+1);
+      znamka:=znamka+intToStr(znamky[length(ziak)-1][i])+' ';
+    znamka:=znamka+intToStr(znamky[length(ziak)-1][length(predmet)-1]);
     writeln(tf3,znamka);
+
     closeFile(tf1);
     closeFile(tf3);
+    Memo1.Visible:=True;
+    Memo1.Clear;
+    Memo1.Lines.Add('Hotovo!');
   end;
 
   if RadioGroup1.ItemIndex=2 then begin
