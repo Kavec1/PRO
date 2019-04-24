@@ -1,4 +1,4 @@
-https://www.gymrk.sk/Direr/pascal/index.htm#ucivo
+﻿https://www.gymrk.sk/Direr/pascal/index.htm#ucivo
 	Jednoduché príkazy
 	príkaz - povel na vykonanie činnosti
 	vstup("read", "readln()"), výstup("write()", "writeln()"), priradenie(":="), skok("goto"), volanie procedúry a prázdny príkaz
@@ -65,6 +65,7 @@ crt
 #72-hore
 #80-dole
 #27-ESC
+#13-enter
 http://wiki.freepascal.org/ASCII
 
 výraz - aritmetické(výsledok je číslo), relačné(boolean), logické
