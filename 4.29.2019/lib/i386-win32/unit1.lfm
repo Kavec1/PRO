@@ -1,0 +1,87 @@
+object Form1: TForm1
+  Left = 1409
+  Height = 395
+  Top = 0
+  Width = 492
+  Caption = 'Form1'
+  ClientHeight = 395
+  ClientWidth = 492
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object Memo1: TMemo
+    Left = 272
+    Height = 370
+    Top = 8
+    Width = 214
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 8
+    Height = 160
+    Top = 8
+    Width = 256
+    AutoFill = True
+    Caption = 'Menu'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 142
+    ClientWidth = 252
+    Items.Strings = (
+      'Priezvisko a profesia v abecednom poradí'
+      'Vyhľadať pracovníka podľa priezviska'
+      'Vyhľadať pracovníka podľa profesie'
+      'Pridať pracovníka'
+      'Vymazať pracovníka'
+      'Priemerný plat v €'
+    )
+    OnClick = RadioGroup1Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 176
+    Width = 80
+    TabOrder = 2
+    Text = 'Meno'
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 3
+    Text = 'Priezvisko'
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 23
+    Top = 240
+    Width = 80
+    TabOrder = 4
+    Text = 'Profesia'
+  end
+  object Edit4: TEdit
+    Left = 8
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 5
+    Text = 'Plat'
+  end
+  object Button1: TButton
+    Left = 120
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Just do it!'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+end
