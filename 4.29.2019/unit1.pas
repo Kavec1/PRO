@@ -109,7 +109,7 @@ begin
     writeln(tf,meno[i]);
     writeln(tf,priezvisko[i]);
     writeln(tf,profesia[i]);
-    writeln(tf,FloatToStrF(plat[i],FFfixed,0,2));
+    writeln(tf,plat[i]);
   end;
   closeFile(tf);
 end;
