@@ -152,6 +152,7 @@ begin
       end;
       file_read;
       Memo1.Lines.Clear;
+      // zvysok v TForm1.Button1Click
     end;
     2:begin
       with Form1 do begin
@@ -164,6 +165,7 @@ begin
       end;
       file_read;
       Memo1.Lines.Clear;
+      // zvysok v TForm1.Button1Click
     end;
     3:begin
       Memo1.Lines.Clear;
@@ -179,6 +181,7 @@ begin
         Button1.Visible:=True;
       end;
       file_read;
+      // zvysok v TForm1.Button1Click
     end;
     4:begin
       Memo1.Lines.Clear;
@@ -190,6 +193,7 @@ begin
         Button1.Visible:=True;
       end;
       file_read;
+      // zvysok v TForm1.Button1Click
     end;
     5:begin
       with Form1 do begin
@@ -213,7 +217,7 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   assignFile(tf,'vstup.txt');
-  DecimalSeparator:=',';
+  //DecimalSeparator:=',';
   with Form1 do begin
     Edit1.Visible:=False;
     Edit2.Visible:=False;
@@ -233,14 +237,24 @@ begin
     1:begin
       repeat
         inc(i);
+        if i>length(priezvisko) then
+          break;
       until Form1.Edit2.Text=priezvisko[i];
-      Memo1.Lines.Add(meno[i]+' '+priezvisko[i]+' '+profesia[i]+' '+floatToStrF(plat[i],FFfixed,0,2));
+      if i<=length(priezvisko) then
+        Memo1.Lines.Add(meno[i]+' '+priezvisko[i]+' '+profesia[i]+' '+floatToStrF(plat[i],FFfixed,0,2))
+      else
+        Memo1.Lines.Add('Človek nieje v zozname');
     end;
     2:begin
       repeat
         inc(i);
+        if i>length(profesia) then
+          break;
       until Form1.Edit3.Text=profesia[i];
-      Memo1.Lines.Add(meno[i]+' '+priezvisko[i]+' '+profesia[i]+' '+floatToStrF(plat[i],FFfixed,0,2));
+      if i<=length(profesia) then
+        Memo1.Lines.Add(meno[i]+' '+priezvisko[i]+' '+profesia[i]+' '+floatToStrF(plat[i],FFfixed,0,2))
+      else
+        Memo1.Lines.Add('Človek nieje v zozname');
     end;
     3:begin
       setLength(meno,length(meno)+1);
@@ -254,6 +268,32 @@ begin
       plat[Length(plat)-1]:=strToFloat(Form1.Edit4.Text);
 
       file_write;
+      Memo1.Lines.Add(Form1.Edit2.Text+' pridaný');
+    end;
+    4:begin
+      repeat
+        inc(i);
+        if i>length(priezvisko) then
+          break;
+      until Form1.Edit2.Text=priezvisko[i];
+
+      if i<=length(priezvisko) then begin
+        for i:=i to length(priezvisko)-2 do begin
+          meno[i]:=meno[i+1];
+          priezvisko[i]:=priezvisko[i+1];
+          profesia[i]:=profesia[i+1];
+          plat[i]:=plat[i+1];
+        end;
+
+        setLength(meno,length(meno)-1);
+        setLength(priezvisko,length(priezvisko)-1);
+        setLength(profesia,length(profesia)-1);
+        setLength(plat,length(plat)-1);
+
+        file_write;
+        Memo1.Lines.Add(Form1.Edit2.Text+' vymazaný');
+      end else
+        Memo1.Lines.Add('Človek nieje v zozname');
     end;
   end;
 end;
